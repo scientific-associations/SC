@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+     <title>سامانه انجمن های علمی</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS RTL-->
+    <link href="css/bootstrap-rtl.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/sb-admin-rtl.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">سامانه انجمن های علمی</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-left top-nav">
+               
+			
+
+
+			 <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> نام و نام خانوادگی <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                       
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i>  تنظیمات</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i>خروج</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> خانه</a>
+                    </li>
+                    <li>
+                        <a href="report.html"><i class="fa fa-fw fa-bar-chart-o"></i> سیستم گزارش گیری</a>
+                    </li>
+                    <li>
+                        <a href="users.html"><i class="fa fa-fw fa-users"></i>اعضا</a>
+                    </li>
+                    <li>
+                        <a href="emialing.html"><i class="fa fa-fw fa-envelope"></i> سیستم اطلاع رسانی</a>
+                    </li>
+					<li>
+                        <a href="evaluation.html"><i class="fa fa-fw  fa-tasks"></i> ارزیابی طرح ها </a>
+                    </li>
+					
+					 <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-file-text "></i> طرح ها <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="create-plan.html">تعریف طرح</a>
+                            </li>
+                            <li>
+                                <a href="Suggested-plans.html">طرح های پیشنهادی</a>
+                            </li>
+							<li>
+                                <a href="Archive-plan.html">آرشیو طرح ها</a>
+                            </li>
+                        </ul>
+                    </li>
+					
+					<li>
+                        <a href="financial-management.html"><i class="fa fa-area-chart"></i> مدیریت مالی</a>
+                    </li>
+					
+                    <li>
+                        <a href="resource-management.html"><i class="fa fa-sitemap"></i> مدیریت منابع</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+		
+		
+		
+		    
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">جزییات طرح</h4>
+      </div>
+     <div class="modal-body">
+
+<div class="row"><br><div class="col-lg-12">
+ <form class="form-horizontal" action="insertPlan.jsp">
+                         <div class="form-group">
+    <label class="col-sm-2 control-label">نام طرح:</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">جسله معارف ورودی های 93 دانشکده کامپیوتر</p>
+    </div>
+  </div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">محل برگزاری:</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">تالار شقایق</p>
+    </div>
+  </div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">ماهیت طرح: </label>
+    <div class="col-sm-10">
+      <p class="form-control-static"> دوره آموزشی </p>
+    </div>
+  </div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">تاریخ برگزاری:</label>
+    <div class="col-sm-10">
+      <p class="form-control-static"> 1394/4/5 </p>
+    </div>
+  </div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">افراد همکار:</label>
+    <div class="col-sm-10">
+      <p class="form-control-static"> سینا نوریان (09124732581)
+امیر احسانی (09332445756)
+پیمان محمدی (09392452614)</p>
+    </div>
+  </div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">ساعت برگزاری:</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">13:30</p>
+    </div>
+  </div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">تاریخ پایان برگزاری:</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">1394/4/5</p>
+    </div>
+  </div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">موارد درخواستی از گروه انجمن های علمی دانشجویی:</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">--------------------------------------------</p>
+    </div>
+  </div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">پرسنل اجرایی(تعداد و نام + شماره تماس دو مسئول اصلی):</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">مدیریت انجمن ها(دکتر برادران)،رئیس دانشکده کامپیوتر(دکتر حسن پور)،معاونت پزوهشی دانشگاه(دکتر پویان)</p>
+    </div>
+  </div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">مبالغ دریافتی با ذکر مورد(دانشجویان،اسپانسر...):</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">هزینه استاد: ۲۲۰ هزار تومان
+/هزینه تبلیغات(فراخوان): ۳۰ هزار تومان
+
+/جمع کل: ۲۵۰ هزار تومان</p>
+    </div>
+  </div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">شرح ریز هزینه:</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">هزینه استاد: ۲۲۰ هزار تومان
+/هزینه تبلیغات(فراخوان): ۳۰ هزار تومان
+
+/جمع کل: ۲۵۰ هزار تومان</p>
+    </div>
+  </div>
+						
+						
+
+
+
+						
+
+                        
+
+                        
+						
+						
+						
+						
+						
+						
+						
+
+                        
+
+                        
+
+                        
+                        
+                    </form>
+
+  </div>
+</div>
+    
+	</div>
+	<div class="modal-footer">
+        <button type="submit" class="btn btn-success">تایید طرح</button>
+<button class="btn btn-warning" type="submit">برگشت برای بازبینی</button>
+<button class="btn btn-danger" type="submit">رد طرح</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+		   
+	
+
+
+	
+		
+		
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            آرشیو طرح ها<small></small>
+                        </h1>
+                      
+                    </div>
+                </div>
+					
+				
+				
+		<div class="row">
+			<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12"> 
+			<label>انچمن ها</label>
+								<select class="form-control">
+                                    <option>انجمن کامپیوتر</option>
+                                    <option>انجمن برق</option>
+                                    <option>انجمن مکانیک</option>
+                                    <option>انجمن معماری</option>
+                                    <option>انجمن معدن و ژئوفیزیک</option>
+                                     <option>انجمن مدیریت</option>
+									<option>انجمن کشاورزی</option>
+									<option>انجمن عمران</option>
+									<option>انجمن کارآفرینی</option>
+									<option>انجمن فیزیک و نجوم</option>
+									<option>انجمن شیمی</option>
+									<option>انجمن زمین شناسی</option>
+									<option>انجمن زبان</option>
+									<option>انجمن ریاضی</option>
+									<option>انجمن رباتیک</option>
+                                     <option>انجمن حسابداری</option>
+                                     <option>انجمن تربیت بدنی</option>
+                                       <option>انجمن پدافند غیر عامل</option>
+                                </select>
+			</div>
+			<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12"> 
+								  <label>ماهیت</label>
+							<select class="form-control">
+                                    <option>بازدید عملی</option>
+                                    <option>کلاس ها و دوره های آموزشی</option>
+                                    <option>مسابقات عملی</option>
+                                    <option>نمایشگاه</option>
+								    <option>همایش هاو کنفرانس ها</option>
+								    <option>چاپ نشریه</option>
+
+                                </select>
+			</div>
+			<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12"> 
+			<label>ترم برگزاری</label>
+								<select class="form-control">
+                                    <option>نیمسال اول سال 1393</option>
+                                    <option>نیمسال دوم سال 1393</option>
+                                    <option>نیمسال اول سال 1394</option>
+                                    <option>نیمسال دوم سال 1394</option>
+                                
+                                </select>
+			</div>
+			
+		</div>
+		<div class="row">
+		<br>
+			  <button class="btn btn-primary col-lg-offset-10 col-md-offset-10 col-xs-offset-0" type="button">مشاهده طرح ها</button>
+			  </div>
+<div class="row"><br><div class="col-lg-12">
+
+
+	 </div>
+
+	  
+	  </div>
+     
+
+
+
+			<div class="row" >
+					
+						<div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">آرشیو </h3>
+                            </div>
+                            <div class="panel-body">
+                              
+<div class="well well-lg" style="border: 2px solid #337AB7;min-height:140px">
+                            <div class="row">
+                           <div style="direction: rtl;" class="col-lg-8"> 
+
+<h5 style="margin-top: 0px; font-size: 17px;" class="page-header">عنوان: دوره آموزشی حفاظت</h5>
+
+ ماهیت: دوره آموزشی
+/ محل برگزاری: تالار شقایق
+/ تاریخ برگزاری: 1394/3/3 
+
+<div class="row"><div class="col-lg-12"><br>
+
+<button type="button" class="btn btn-info " data-toggle="modal" data-target="#myModal">جزییات</button>
+</div>
+  </div>
+</div><div class="col-lg-4 col-lg-offset-0"><img style="width: 50%; float: left; margin-top: 7px;" src="image/pic1.jpg" class="" alt="Generic placeholder image"></div>
+                           
+                          </div>
+                        </div>
+
+						   
+<div class="well well-lg" style="border: 2px solid #337AB7;min-height:140px">
+                          <div class="row">
+                           <div style="direction: rtl;" class="col-lg-8"> 
+
+<h5 style="margin-top: 0px; font-size: 17px;" class="page-header">عنوان: جسله معارف ورودی های 93 دانشکده کامپیوتر</h5>
+
+ ماهیت: دوره آموزشی
+/ محل برگزاری: تالار شقایق
+/ تاریخ برگزاری: 1394/3/3 
+
+<div class="row"><div class="col-lg-12"><br>
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">جزییات</button>
+</div>
+  </div>
+</div><div class="col-lg-4 col-lg-offset-0"><img style="width: 50%; float: left; margin-top: 7px;" src="image/pic2.jpg" class="" alt="Generic placeholder image"></div>
+                           
+                          </div>
+                        </div>						   
+
+<div class="well well-lg" style="border: 2px solid #337AB7;min-height:140px">
+                            <div class="row">
+                           <div style="direction: rtl;" class="col-lg-8"> 
+
+<h5 style="margin-top: 0px; font-size: 17px;" class="page-header">عنوان: دوره آموزشی حفاظت</h5>
+
+ ماهیت: دوره آموزشی
+/ محل برگزاری: تالار شقایق
+/ تاریخ برگزاری: 1394/3/3 
+
+<div class="row"><div class="col-lg-12"><br>
+
+<button type="button" class="btn btn-info " data-toggle="modal" data-target="#myModal">جزییات</button>
+</div>
+  </div>
+</div><div class="col-lg-4 col-lg-offset-0"><img style="width: 50%; float: left; margin-top: 7px;" src="image/pic1.jpg" class="" alt="Generic placeholder image"></div>
+                           
+                          </div>
+                        </div>
+						
+
+<div class="well well-lg" style="border: 2px solid #337AB7;min-height:140px">
+                          <div class="row">
+                           <div style="direction: rtl;" class="col-lg-8"> 
+
+<h5 style="margin-top: 0px; font-size: 17px;" class="page-header">عنوان: جسله معارف ورودی های 93 دانشکده کامپیوتر</h5>
+
+ ماهیت: دوره آموزشی
+/ محل برگزاری: تالار شقایق
+/ تاریخ برگزاری: 1394/3/3 
+
+<div class="row"><div class="col-lg-12"><br>
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">جزییات</button>
+</div>
+  </div>
+</div><div class="col-lg-4 col-lg-offset-0"><img style="width: 50%; float: left; margin-top: 7px;" src="image/pic2.jpg" class="" alt="Generic placeholder image"></div>
+                           
+                          </div>
+                        </div>						   
+						   
+							   
+
+						  </div>
+                        </div>
+						
+				</div>
+				
+                <!-- /.row -->
+
+          
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>
+
