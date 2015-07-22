@@ -27,3 +27,8 @@ ul.media-list li.media div.media-left a img.media-object{
 width: 64px;
 margin-left: 19px;
 }
+/*for details-plan-table model in index pannel*/
+@media (min-width:768px){
+div.modal .modal-dialog#details-plan-table{
+width:1200px;}
+}
