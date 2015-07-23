@@ -33,15 +33,14 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+	
+	
 </head>
 
+
+
 <body>
-
-    <div id="wrapper">
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -50,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">سامانه انجمن های علمی</a>
+                <a class="navbar-brand" href="index.html">سامانه انجمن هاي علمي</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-left top-nav">
@@ -59,11 +58,11 @@
 
 
 			 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> نام و نام خانوادگی <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> نام و نام خانوادگي <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                        
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i>  تنظیمات</a>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i>  تنظيمات</a>
                         </li>
                         <li class="divider"></li>
                         <li>
@@ -79,38 +78,38 @@
                         <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> خانه</a>
                     </li>
                     <li>
-                        <a href="report.html"><i class="fa fa-fw fa-bar-chart-o"></i> سیستم گزارش گیری</a>
+                        <a href="report.html"><i class="fa fa-fw fa-bar-chart-o"></i> سيستم گزارش گيري</a>
                     </li>
                     <li>
                         <a href="users.html"><i class="fa fa-fw fa-users"></i>اعضا</a>
                     </li>
                     <li>
-                        <a href="emialing.html"><i class="fa fa-fw fa-envelope"></i> سیستم اطلاع رسانی</a>
+                        <a href="emialing.html"><i class="fa fa-fw fa-envelope"></i> سيستم اطلاع رساني</a>
                     </li>
-					<li>
-                        <a href="evaluation.html"><i class="fa fa-fw  fa-tasks"></i> ارزیابی طرح ها </a>
+					<li class="hide" >
+                        <a href="evaluation.html"><i class="fa fa-fw  fa-tasks"></i> ارزيابي طرح ها </a>
                     </li>
 
 					 <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-file-text "></i> طرح ها <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="create-plan.html">تعریف طرح</a>
+                                <a href="create-plan.html">تعريف طرح</a>
                             </li>
                             <li>
-                                <a href="Suggested-plans.html">طرح های پیشنهادی</a>
+                                <a href="Suggested-plans.html">طرح هاي پيشنهادي</a>
                             </li>
 							<li>
-                                <a href="Archive-plan.html">آرشیو طرح ها</a>
+                                <a href="Archive-plan.html">آرشيو طرح ها</a>
                             </li>
                         </ul>
                     </li>
-					<li>
-                        <a href="financial-management.html"><i class="fa fa-area-chart"></i> مدیریت مالی</a>
+					<li class="hide" >
+                        <a href="financial-management.html"><i class="fa fa-area-chart"></i> م3ديريت مالي</a>
                     </li>
 					
                     <li>
-                        <a href="resource-management.html"><i class="fa fa-sitemap"></i> مدیریت منابع</a>
+                        <a href="resource-management.html"><i class="fa fa-sitemap"></i> مديريت منابع</a>
                     </li>
                    
                 </ul>
@@ -119,6 +118,10 @@
         </nav>
 
     
+    <div id="wrapper">
+
+        <!-- Navigation -->
+      
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" id="details-plan-table" role="document">
@@ -767,7 +770,7 @@
                           <div class="row">
                            <div style="direction: rtl;" class="col-lg-8"> 
 
-<h5 style="margin-top: 0px; font-size: 17px;" class="page-header" data-toggle="modal" data-target="#myModal">عنوان: جسله معارف ورودی های 93 دانشکده کامپیوتر</h5>
+<h5 style="margin-top: 0px; font-size: 17px;" class="page-header" data-toggle="modal" data-target="#myModal"><strong>عنوان: جسله معارف ورودی های 93 دانشکده کامپیوتر</strong></h5>
 
  ماهیت: دوره آموزشی
 / محل برگزاری: تالار شقایق
@@ -795,6 +798,7 @@
 <div class="row"><div class="col-lg-12"><br>
 
 <button type="button" class="btn btn-info " data-toggle="modal" data-target="#myModal" >جزییات</button>
+<a href="evaluation.html" class="btn btn-info">نتایج ارزیابی</a>
 </div>
   </div>
 </div><div class="col-lg-4 col-lg-offset-0"><img style="width: 50%; float: left; margin-top: 7px;" src="image/pic1.jpg" class="" alt="Generic placeholder image"></div>
@@ -900,9 +904,12 @@
     </div>
     <!-- /#wrapper -->
 
+   
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
+	
+	
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
@@ -910,7 +917,7 @@
     <script src="js/plugins/morris/raphael.min.js"></script>
     <script src="js/plugins/morris/morris.min.js"></script>
     <script src="js/plugins/morris/morris-data.js"></script>
-
+ 
 </body>
 
 </html>
